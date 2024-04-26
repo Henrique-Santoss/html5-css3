@@ -10,6 +10,7 @@
 body{
     background-color: #84E0AD;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
 header{
@@ -58,6 +59,13 @@ h3{
     background-color: #84e0ad65;
 }
 
+section#video{
+    background-color: #1B5D39;
+    margin: auto;
+    padding: 15px 20px;
+    width: 600px;
+}
+
 section{
     background-color: white;
     margin: auto;
@@ -66,14 +74,33 @@ section{
 }
 
 article{
-    background-color: #33b76e6c;
-    padding: 0px 20px;
+    background-color: #33b76e6c;border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.185);
+    padding: 15px 20px 15px 20px;
 }
 
 h4{
     background-color: #33B76E;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.185);
     color: white;
-    padding: 15px;
+    margin: auto 0px 0px 0px;
+    padding: 10px 20px;
+}
+
+section#artigo{
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.185);
+}
+
+div#antigo{
+    display: inline;
+    width: 250px;
+}
+
+div#recentes{
+    display: inline;
+    width: 200px;
 }
 
 article > aside{
@@ -83,7 +110,7 @@ article > aside{
 footer p{
     background-color:#1B5D39;
     color: white;
-    outline: 0px;
+    margin-bottom: 0px;
     padding: 10px 0px;
     text-align: center;
 }
