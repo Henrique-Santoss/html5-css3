@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: 'android';
     src: url(fontes/idroid.otf) format(opentype);
@@ -10,17 +12,19 @@
 body{
     background-color: #84E0AD;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+    margin: auto;
 }
 
 header{
     background-image: linear-gradient(to bottom, #33B76E, #1B5D39);
     color: white;
-    padding: 20px;
+    padding: 20px 0px 10px 10px;
     margin: 0px auto;
 }
 
 h1{
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 2em;
     margin-top: 0px;
     text-align: center;
 }
@@ -34,20 +38,34 @@ header > p{
     text-align: center;
 }
 
+nav{
+    padding: 20px 10px 0px 0px;
+}
+
 nav > a{
+    border-radius: 5px;
     color: white;
     text-decoration: none;
+    padding: 0px 10px 0px;
 }
 
 nav > a:hover{
-
+    background-color: #33b76e;
+    color: #1B5D39;
+    padding: 10px;
 }
 
 main{
     background-color: white;
+    box-shadow: ;
     margin: auto;
-    padding: 20px;
-    width: 600px;
+    padding: 5px 20px 20px 20px;
+    width: 1050px;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
 }
 
 h2, h3{
@@ -59,18 +77,40 @@ h3{
     background-color: #84e0ad65;
 }
 
-section#video{
+.empresas{
+    color: #1B5D39;
+}
+
+.sites{
+    background-color: #33b76e81;
+    color: #1B5D39;
+    font-weight: bold;
+    padding: 1px 2px;
+    text-decoration: none;
+}
+
+a:hover{
     background-color: #1B5D39;
-    margin: auto;
+    color: white;
+}
+
+section#video{
+    background-color: white;
+    margin: 0px auto;
     padding: 15px 20px;
-    width: 600px;
+    width: 1050px;
+}
+
+iframe{
+    background-color: #1B5D39;
+    padding: 20px 60px;
 }
 
 section{
     background-color: white;
     margin: auto;
     padding: 20px;
-    width: 600px;
+    width: 1050px;
 }
 
 article{
@@ -91,16 +131,6 @@ h4{
 section#artigo{
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.185);
-}
-
-div#antigo{
-    display: inline;
-    width: 250px;
-}
-
-div#recentes{
-    display: inline;
-    width: 200px;
 }
 
 article > aside{
