@@ -5,8 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --font-destaque: "Passion One", sans-serif;
-    --font-padrão: "Sriracha", sans-serif;
+    --fonte1: Verdana, Geneva , Tahoma, sans-serif;
+    --fonte2:'Pasion One', cursive;
+    --fonte3:'Sriracha', cursive;
 }
 
 *{
@@ -16,6 +17,7 @@
 
 html, body{
     background-color: darkgray;
+    font-family: var(--fonte1);
     min-height: 100vh;
 }
 
@@ -26,7 +28,7 @@ header{
 }
 
 header > h1{
-    font-family: var(--font-destaque);
+    font-family:var(--fonte2);
     font-variant: small-caps;
     padding-top: 50px;
 }
@@ -46,8 +48,9 @@ header a:hover, footer a:hover{
 }
 
 section{
-    padding: 10vh 0px 10vh 30px;
+    font-family: var(--fonte3);
     line-height: 2em;
+    padding: 10vh 0px 10vh 30px;
 }
 
 section.normal{
