@@ -28,6 +28,20 @@ header > nav{
     border: 1px dotted black;
 }
 
+header > nav > a{
+    text-decoration: none;
+    color: white;
+}
+
+header#container{
+    flex-flow: column wrap;
+    width: 100vw;
+}
+
+.item{
+    flex: auto;
+}
+
 main{
     background-color: white;
     margin: 10px;
