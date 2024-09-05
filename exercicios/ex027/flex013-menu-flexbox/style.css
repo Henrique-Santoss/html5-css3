@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/*
+    Media Query para todos os dispositivos
+*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -34,18 +38,39 @@ header > nav > a{
 }
 
 header#container{
+    display: flex;
     flex-flow: column wrap;
-    width: 100vw;
+    justify-content: center;
+    justify-items: center;
 }
 
-.item{
-    flex: auto;
+header > h1.item{
+    flex: 1 0 auto;
+    padding: 30px;
+}
+
+header > nav > a.item{
+    flex: 1 1 auto;
+    padding: 30px;
 }
 
 main{
     background-color: white;
+    width: 400px;
     margin: 10px;
-    padding: 10px;
+    margin: auto;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.411);
+}
+
+main > h2{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+main > p{
+    text-indent: 20px;
+    text-align: justify;
+    padding-bottom: 10px;
 }
