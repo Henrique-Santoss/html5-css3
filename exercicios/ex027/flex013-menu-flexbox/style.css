@@ -22,36 +22,44 @@ header{
     background-color: grey;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1{
     border: 1px dotted black;
+    text-align: center;
+    flex: 0 0 452px;
 }
 
 header > nav{
     border: 1px dotted black;
-}
 
-header > nav > a{
-    text-decoration: none;
-    color: white;
-}
-
-header#container{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    justify-items: center;
 }
 
-header > h1.item{
+header > nav > a{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 93vw;
+
     flex: 1 0 auto;
-    padding: 30px;
 }
 
-header > nav > a.item{
-    flex: 1 1 auto;
-    padding: 30px;
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
 }
 
 main{
