@@ -25,7 +25,7 @@ header{
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -35,10 +35,26 @@ header > h1{
     flex: 0 0 452px;
 }
 
+
+span#burguer{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}
+
+
 header > nav{
     border: 1px dotted black;
 
-    display: flex;
+    display: none;
     flex-flow: column wrap;
     justify-content: center;
 }
