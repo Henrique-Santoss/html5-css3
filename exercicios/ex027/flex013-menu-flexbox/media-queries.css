@@ -1,11 +1,33 @@
 @charset "UTF-8";
 
+/*  Typical Device Breakpoints em 2024
+    Pequenas Telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: de 769px até 992px
+    Desktop: de 993px até 1200px
+    Grandes Telas: maiores de 1201px
+*/
+
 /*
     Media Queries para outros dispositivos
 */
 
-@media screen and (min-width: 769px;) {
+@media screen and (min-width: 769px) { /* Tablet */
     
+    body{
+        font-size: 1.2em;
+    }
+
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > h1{
+        text-align: left;
+        flex: 0 0 160px;
+    }
+
     span#burguer{
         display: none;
     }
@@ -13,6 +35,9 @@
     header > nav{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+    }
+
+    main{
+        width: 800px;
     }
 }

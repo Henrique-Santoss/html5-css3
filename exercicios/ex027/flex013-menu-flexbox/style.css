@@ -32,9 +32,9 @@ header{
 header > h1{
     border: 1px dotted black;
     text-align: center;
+    margin-bottom: 10px;
     flex: 0 0 452px;
 }
-
 
 span#burguer{
     background-color: black;
@@ -42,6 +42,7 @@ span#burguer{
     cursor: pointer;
     display: block;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 span#burguer:hover{
@@ -57,6 +58,7 @@ header > nav{
     display: none;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 }
 
 header > nav > a{
@@ -67,7 +69,7 @@ header > nav > a{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    width: 93vw;
+    width: 300px;
 
     flex: 1 0 auto;
 }
