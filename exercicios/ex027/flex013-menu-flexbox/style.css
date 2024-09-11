@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /*
-    Media Query para todos os dispositivos
+    CSS para todos os dispositivos
+    Foco em Mobile First
 */
 
 *{
@@ -44,7 +45,7 @@ span#burguer{
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
-    width: 200px;
+    width: 452px;
 }
 
 span#burguer:hover{

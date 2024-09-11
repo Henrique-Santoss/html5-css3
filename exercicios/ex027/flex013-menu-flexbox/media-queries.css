@@ -12,20 +12,22 @@
     Media Queries para outros dispositivos
 */
 
-@media screen and (min-width: 769px) { /* Tablet */
+@media screen and (min-width: 769px) and (max-width: 992px) { /* Tablet */
     
     body{
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     header{
+        display: flex;
+        flex-flow: row nowrap;
         justify-content: space-between;
         align-items: center;
     }
 
     header > h1{
         text-align: left;
-        flex: 0 0 160px;
+        flex: 0 0 150px;
     }
 
     span#burguer{
@@ -35,10 +37,87 @@
     header > nav{
         display: flex;
         flex-flow: row wrap;
+        justify-content: flex-end;
     }
     
     header > nav > a{
-        flex: 0 0 100px;
+        width: 100px;
+    }
+
+    main{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    /* Desktop*/
+    
+    body{
+        font-size: 1.4em;
+    }
+
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > h1{
+        text-align: left;
+        flex: 0 0 190px;
+    }
+
+    span#burguer{
+        display: none;
+    }
+
+    header > nav{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    
+    header > nav > a{
+        width: 120px;
+    }
+
+    main{
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*Grandes Telas*/
+
+    body{
+        font-size: 1.4em;
+    }
+
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header > h1{
+        text-align: left;
+        flex: 0 0 190px;
+    }
+
+    span#burguer{
+        display: none;
+    }
+
+    header > nav{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    
+    header > nav > a{
+        width: 120px;
     }
 
     main{
