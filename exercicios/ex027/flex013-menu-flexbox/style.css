@@ -43,6 +43,8 @@ span#burguer{
     display: block;
     padding: 10px;
     margin-bottom: 10px;
+    text-align: center;
+    width: 200px;
 }
 
 span#burguer:hover{

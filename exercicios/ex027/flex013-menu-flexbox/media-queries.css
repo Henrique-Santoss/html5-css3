@@ -36,6 +36,10 @@
         display: flex;
         flex-flow: row wrap;
     }
+    
+    header > nav > a{
+        flex: 0 0 100px;
+    }
 
     main{
         width: 800px;
